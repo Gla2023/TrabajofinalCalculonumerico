@@ -60,10 +60,4 @@ def bisection(f, a, b, tol=1e-6, max_iter=100):
 
     raise Exception("El método de la bisección no convergió después de {} iteraciones.".format(max_iter))
 
-# Ejemplo de uso
-def ejemplo_funcion(x):
-    return x**2 - 4
-
-raiz = bisection(ejemplo_funcion, 0, 3)
-print("Aproximación de la raíz:", raiz)
 

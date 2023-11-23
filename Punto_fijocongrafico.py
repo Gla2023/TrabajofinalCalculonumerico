@@ -61,19 +61,4 @@ def punto_fijo(g, x0, tol=1e-6, max_iter=100):
 
     raise ValueError("El método de iteración de punto fijo no convergió en el número máximo de iteraciones.")
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    # Define la función g(x)
-    x = sp.symbols('x')
-    g = sp.sin(x)
-    
-    # Punto inicial
-    x0 = 1.0
-    
-    # Llama al método de punto fijo
-    root, iterations = punto_fijo(g, x0)
-    
-    # Imprime los resultados
-    print(f"Aproximación de la raíz: {root}")
-    print(f"Número de iteraciones: {iterations}")
 

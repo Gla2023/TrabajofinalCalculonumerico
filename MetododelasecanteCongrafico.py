@@ -58,10 +58,3 @@ def secant_method(func, x0, x1, tol=1e-6, max_iter=100):
 
     raise Exception("El método de la secante no convergió después de {} iteraciones.".format(max_iter))
 
-# Ejemplo de uso
-def ejemplo_funcion(x):
-    return x**2 - 4
-
-raiz_secante = secant_method(ejemplo_funcion, 0, 3)
-print("Aproximación de la raíz:", raiz_secante)
-

@@ -73,17 +73,3 @@ def newton_raphson(func, x0, tol=1e-6, max_iter=100):
 
     raise ValueError("El método de Newton-Raphson no convergió en el número máximo de iteraciones.")
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    # Define la función f(x)
-    x = sp.symbols('x')
-    f = x**2 - 4
-    
-    # Punto inicial
-    x0 = 1.0
-    
-    # Llama al método de Newton-Raphson
-    root = newton_raphson(f, x0)
-    
-    # Imprime el resultado
-    print(f"Aproximación de la raíz: {root}")

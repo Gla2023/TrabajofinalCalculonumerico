@@ -79,24 +79,3 @@ def plot_regula_falsi_iterations(func, a, b, tol=1e-6, max_iter=100):
     plt.grid(True)
     plt.show()
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    # Define la función y el intervalo
-    def func(x):
-        return x**3 - x - 2
-    
-    a = 1.0
-    b = 2.0
-    
-    # Llama a la función para graficar las iteraciones
-    plot_regula_falsi_iterations(func, a, b)
-
-# Ejemplo de uso:
-#if __name__ == "__main__":
-    #def f(x):
-     #   return x**3 - 2*x**2 + 4*x - 8
-    
-    #a = 1.0
-    #b = 3.0
-   # root = regula_falsi(f, a, b)
-  #  print("Aproximación de la raíz:", root)#
